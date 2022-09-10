@@ -1,0 +1,194 @@
+@charset "EUC-KR";
+
+*
+{
+	padding:0px;
+	margin:0px;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-size: cover;
+}
+
+.main-title
+{
+	position:reletive;
+	bottom:100%;
+}
+
+
+.image1
+{
+	width: 100%;
+	height: 100vh;
+	padding:0px;
+	margin:0px;
+	z-index: 1;
+	background-size: cover;
+}
+
+.titlemenu
+{
+	display:flex;
+	position:absolute;
+	bottom: 94%;
+	justify-content: space-around;
+	width: 100%;
+}
+
+
+.titlemenu li
+{
+	position:relative;
+	display:inline-block;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 20px;
+	padding:0;
+	margin-top:0;
+	margin-right:0;
+	left: 80%;
+}
+
+
+.titlemenu li a
+{
+	text-decoration: none;
+	color:white;
+	text-align: center;
+}
+
+.titlemenu h1
+{
+	position:absolute;
+	color:white;
+	right:91%;
+	font-size: 30px;
+	bottom: -8%;
+}
+
+
+.titlemenu li::after {
+
+    content: "";
+    position:absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-46%);
+    width: 0;
+    height: 10%;
+    background: red;
+    transition: all .5s ease-in;
+}
+
+
+ 
+.titlemenu li:hover::after
+{
+    width:100%;
+}
+
+.mainloginbar
+{
+	position: relative;
+	width:6%;
+	z-index: 4;
+	background-color: red;
+	margin-left: 0px;
+	text-align: center;
+	left: 10%;
+	
+}
+
+.mainloginbar a
+{
+	position: relative;
+	text-align: right;
+	align-items: right;
+	text-decoration: none;
+	color: white;
+}
+
+/*
+.mainjoinbar
+{
+	width:6%;
+	z-index:4;
+	background-color: green;
+	margin-left:0px;
+}
+*/
+
+
+.welcometitle
+{
+	position:absolute;
+	font-size:4em;
+	width:70%;
+	bottom:60%;
+	z-index: 4;
+	color:white;
+	left:17%;
+	text-align: center;
+	animation: slide 4s ease;
+}
+
+.welcometitle1
+{
+	position:absolute;
+	font-size:3em;
+	width:70%;
+	bottom:48%;
+	z-index: 4;
+	color:white;
+	left:17%;
+	text-align: center;
+	animation: slide 4s ease;
+}
+
+
+
+@keyframes slide
+{
+	from
+	{
+		left:10%;
+	}
+	
+	to
+	{
+		left:17%;
+	}
+	
+} 
+	
+/*
+.image1
+{
+	background-image: url();
+}
+
+
+.sns-1
+{
+	position: absolute;
+	width:30%;
+	z-index: 4;
+	bottom: -25%;
+	height: 60%;
+	background-color: white;
+}
+
+.sns-1 img
+{
+	width: 50%;
+	height: 50%;
+	align-items: center;
+	left: 50%;
+}
+*/
+
+.registForm
+{
+	position:absolute;
+	bottom:40%;
+}
+

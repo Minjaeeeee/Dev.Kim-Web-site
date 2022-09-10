@@ -1,0 +1,234 @@
+@charset "EUC-KR"; 
+*
+{
+	padding:0px;
+	margin:0px;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-size: cover;
+}
+
+.main-title
+{
+	position:reletive;
+	bottom:100%;
+}
+
+
+.image1
+{
+	width: 100%;
+	height: 100vh;
+	padding:0px;
+	margin:0px;
+	z-index: 1;
+	background-size: cover;
+    opacity: 2;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ;
+}
+
+.titlemenu
+{
+	display:flex;
+	position:absolute;
+	bottom: 94%;
+	justify-content: space-around;
+	width: 100%;
+}
+
+
+.titlemenu li
+{
+	position:relative;
+	display:inline-block;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 20px;
+	padding:0;
+	margin-top:0;
+	margin-right:0;
+}
+
+
+.titlemenu li a
+{
+	text-decoration: none;
+	color:white;
+}
+
+.titlemenu h1
+{
+	position:absolute;
+	color:white;
+	right:91%;
+	font-size: 30px;
+	bottom: -8%;
+}
+
+
+.titlemenu li::after {
+
+    content: "";
+    position:absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-46%);
+    width: 0;
+    height: 10%;
+    background: red;
+    transition: all .5s ease-in;
+}
+
+
+ 
+.titlemenu li:hover::after
+{
+    width:100%;
+}
+
+
+
+
+.welcometitle
+{
+	position:absolute;
+	font-size:4em;
+	width:70%;
+	bottom:60%;
+	z-index: 4;
+	color:white;
+	left:17%;
+	text-align: center;
+	animation: slide 4s ease;
+}
+
+.welcometitle1
+{
+	position:absolute;
+	font-size:3em;
+	width:70%;
+	bottom:48%;
+	z-index: 4;
+	color:white;
+	left:17%;
+	text-align: center;
+	animation: slide 4s ease;
+}
+
+
+
+@keyframes slide
+{
+	from
+	{
+		left:10%;
+	}
+	
+	to
+	{
+		left:17%;
+	}
+	
+} 
+	
+/*
+.image1
+{
+	background-image: url();
+}
+
+
+.sns-1
+{
+	position: absolute;
+	width:30%;
+	z-index: 4;
+	bottom: -25%;
+	height: 60%;
+	background-color: white;
+}
+
+.sns-1 img
+{
+	width: 50%;
+	height: 50%;
+	align-items: center;
+	left: 50%;
+}
+*/
+
+.container
+{
+	position: absolute;
+	bottom: 35%;
+	width:800px;
+	left:24%;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.7;
+}
+
+.container .form-control
+{
+	position: relative;
+	color: black;
+	background-color: white;
+	text-align: center;
+	left: 32.5%;
+	width: 250px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px 10px;
+	font-size: 20px;
+	border-radius: 10px 10px 10px 10px;	
+}
+
+.login
+{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 277px;
+    height: 34px;
+    background-color: red;
+    font-size: 20px;
+    left: 32.5%;
+    color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.join
+{
+	position: relative;
+    text-align: center;
+    align-items: center;
+    width: 274px;
+    height: 30px;
+    background-color: green;
+    font-size: 20px;
+    left: 32.6%;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.join a
+{
+	text-align: center;
+	text-decoration:none;
+	color:white;
+	padding-bottom: 10;
+	align-items: center;
+}
+
+
+label
+{
+	position: relative;
+	color:black;
+	text-align: left;
+}
+
+.form-group
+{
+	opacity: 1;
+}
+
